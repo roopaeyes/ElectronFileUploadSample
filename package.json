@@ -1,0 +1,45 @@
+{
+  "name": "new-angularjs",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "build": {
+    "appId": "EcoStructire",
+    "asar": {
+      "smartUnpack": false
+    },
+    "files": [
+      "main.js"
+    ],
+    "directories": {
+      "output": "electron"
+    },
+    "extraMetadata": {
+      "main": "main.js"
+    },
+    "extends": null,
+    "productName": "ExostructirePoersommisni",
+    "copyright": "Copyright @2022",
+    "buildVersion": "1"
+  },
+  "scripts": {
+    "start": "electron .",
+    "win32": "electron-builder --win --ia32",
+    "win64": "electron-builder --win --x64",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.8.3",
+    "angular-base64-upload": "^0.1.23",
+    "angular-file-upload": "^2.6.1",
+    "bower": "^1.8.14",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "electron": "^20.0.3",
+    "electron-builder": "^23.3.3"
+  }
+}

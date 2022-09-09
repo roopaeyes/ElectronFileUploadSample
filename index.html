@@ -1,0 +1,28 @@
+<html>
+   <head>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"> </script>
+       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+       <script type="text/javascript" src="/public/angular-base64-upload.js"></script>
+   </head>
+   
+   <body ng-app = "myApp">	
+      <div ng-controller = "myCtrl">
+         <input type='file'  ng-model='myModel' on-after-validate = "onAfterValidateFunc" multiple ng-model="files" name="files" id="uploaddocs" base-sixty-four-input >
+         <br /><br />  
+            Status: {{ Status }} 
+      </div>
+      
+      <script> 
+       var myApp = angular.module('myApp',['naif.base64']);  
+       myApp.controller('myCtrl', function($scope,$q) {
+        $scope.Status = "Not started";      
+         $scope.onAfterValidateFunc = function(e, fileObjects,fileList){
+           $scope.Status = "Done";
+        }        
+      });
+      </script>
+      
+   </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "new-angularjs",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "roopa <roopaeyes@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "jquery": "^3.6.0"
+  }
+}
